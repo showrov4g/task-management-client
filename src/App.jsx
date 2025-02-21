@@ -1,9 +1,8 @@
 import { useContext, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
-import MyContext from './Context/MyContext'
-import AddTask from './components/AddTask/AddTask'
+import TodoForm from './Components/TodoForm/TodoForm'
+import Login from './Components/LoginButton/Login'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +11,8 @@ function App() {
   return (
     <>
       <div>
-        <AddTask></AddTask>
+        <Login></Login>
+        <TodoForm></TodoForm>
       </div>
     </>
   )
